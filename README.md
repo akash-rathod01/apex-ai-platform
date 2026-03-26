@@ -4,7 +4,25 @@
 
 [![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://www.python.org/downloads/)
 [![Node.js](https://img.shields.io/badge/Node.js-22+-green.svg)](https://nodejs.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/badge/GitHub-akash--rathod01-black.svg)](https://github.com/akash-rathod01/apex-ai-platform)
+
+---
+
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Key Features](#-key-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Configuration](#-configuration)
+- [Project Structure](#-project-structure)
+- [Testing](#-testing)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Support](#-support)
 
 ---
 
@@ -117,7 +135,7 @@ core/memory/
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/apex-ai-platform.git
+git clone https://github.com/akash-rathod01/apex-ai-platform.git
 cd apex-ai-platform
 
 # Install Python dependencies
@@ -371,19 +389,63 @@ python verify_complete_setup.py
 
 ## 🤝 Contributing
 
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+We welcome contributions from the community! Whether it's bug fixes, new features, or documentation improvements, your help is appreciated.
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+### How to Contribute
+
+1. **Fork the repository**
+   ```bash
+   git clone https://github.com/akash-rathod01/apex-ai-platform.git
+   ```
+
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+
+3. **Make your changes**
+   - Write clean, documented code
+   - Add tests for new features
+   - Update documentation as needed
+
+4. **Commit your changes**
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+
+5. **Push to your fork**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+6. **Open a Pull Request**
+   - Describe your changes clearly
+   - Reference any related issues
+   - Ensure all tests pass
+
+### Development Guidelines
+
+- Follow existing code style and conventions
+- Write meaningful commit messages
+- Add tests for new functionality
+- Update documentation for API changes
+- Keep PRs focused and atomic
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
+This project is licensed under the **MIT License**.
+
+Copyright (c) 2026 Akash Rathod
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.**
+
+See the [LICENSE](LICENSE) file for the full license text.
 
 ---
 
@@ -398,11 +460,11 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ## 📞 Support
 
-- 📧 Email: support@apex-ai platform.dev
-- 💬 Discord: [Join our community](https://discord.gg/apex-ai)
-- 📖 Docs: [docs.apex-ai-platform.dev](https://docs.apex-ai-platform.dev)
-- 🐛 Issues: [GitHub Issues](https://github.com/YOUR_USERNAME/apex-ai-platform/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/akash-rathod01/apex-ai-platform/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/akash-rathod01/apex-ai-platform/discussions)
+- 📖 **Documentation**: Check the `/docs` folder and inline documentation
+- ⭐ **Star this repo** if you find it useful!
 
 ---
 
-**Built with ❤️ by the Apex AI Team**
+**Built with ❤️ for the Testing Community**
