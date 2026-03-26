@@ -1,0 +1,301 @@
+# Apex AI Platform - Git Ignore Configuration
+
+# ============================================
+# PYTHON
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================
+# NODE.JS / NEXT.JS
+# ============================================
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# ============================================
+# APEX AI PLATFORM SPECIFIC
+# ============================================
+
+# Per-app memory databases (DO NOT COMMIT)
+core/memory/*.db
+core/memory/*.db-journal
+core/memory/*.db-wal
+core/memory/*.db-shm
+
+# Per-app snapshots and baselines (LARGE FILES)
+apps/*/snapshots/**/*.png
+apps/*/snapshots/**/*.jpg
+apps/*/snapshots/**/*.jpeg
+apps/*/snapshots/**/*.mp4
+apps/*/snapshots/**/*.webm
+
+# BUT keep snapshot directories structure
+!apps/*/snapshots/.gitkeep
+!apps/*/snapshots/ui/.gitkeep
+!apps/*/snapshots/api/.gitkeep
+!apps/*/snapshots/performance/.gitkeep
+
+# Per-app execution logs (DO NOT COMMIT)
+apps/*/logs/**/*.log
+apps/*/logs/**/*.txt
+
+# BUT keep log directories
+!apps/*/logs/.gitkeep
+
+# Observability data (metrics/traces are too large)
+observability/logs/**/*.log
+observability/metrics/**/*.json
+observability/traces/**/*.json
+
+# Runtime test execution artifacts
+runtime/sandbox/**/screenshots/
+runtime/sandbox/**/videos/
+runtime/sandbox/**/downloads/
+runtime/sandbox/**/traces/
+
+# Plugin cache
+plugins/.cache/
+plugins/**/__pycache__/
+
+# LLM model cache (DO NOT COMMIT)
+.model_cache/
+models/*.bin
+models/*.gguf
+models/*.safetensors
+
+# Ollama models (managed by Ollama)
+.ollama/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# API keys and secrets
+secrets/
+*.key
+*.pem
+*.crt
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+tmp/
+
+# IDE and Editor files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# BUT keep .vscode with recommended extensions
+!.vscode/extensions.json
+!.vscode/settings.template.json
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Docker
+*.env.docker
+docker-compose.override.yml
+
+# CI/CD artifacts
+.github/workflows/secrets.yml
+cicd/**/*.env
+
+# Performance test results
+performance_results/
+load_test_results/
+
+# Security scan results
+security_reports/
+vulnerability_scans/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# ============================================
+# EXCEPTIONS (FILES TO ALWAYS COMMIT)
+# ============================================
+
+# Keep example files
+!.env.example
+!apps/app1/.env.example
+!environments/dev/.env.example
+
+# Keep placeholder files
+!**/.gitkeep
+
+# Keep documentation
+!**/*.md
+
+# Keep configuration templates
+!apps/**/config.example.yaml
+!apps/**/rules.example.yaml
+
+# Keep blueprint examples
+!apps/*/blueprints/examples/
+
+# Keep small test fixtures (< 1MB)
+!tests/fixtures/**

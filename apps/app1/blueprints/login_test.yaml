@@ -1,0 +1,56 @@
+blueprint_id: login_test_001
+version: "1.0"
+type: ui
+metadata:
+  name: Login Test - Valid Credentials
+  app_id: app1
+  priority: high
+  tags:
+    - authentication
+    - smoke
+    - critical-path
+  author: Apex AI Platform
+  created_at: "2026-03-26"
+
+steps:
+  - action: navigate
+    target: https://example.com/login
+    timeout: 10000
+
+  - action: wait
+    selector: 'input[name="username"]'
+    timeout: 5000
+
+  - action: fill
+    selector: 'input[name="username"]'
+    value: testuser@example.com
+    timeout: 3000
+
+  - action: fill
+    selector: 'input[name="password"]'
+    value: SecurePassword123
+    timeout: 3000
+
+  - action: click
+    selector: 'button[type="submit"]'
+    timeout: 3000
+
+  - action: wait
+    selector: '.dashboard'
+    timeout: 10000
+
+  - action: assert
+    selector: '.user-profile'
+    expected:
+      visible: true
+      text: testuser@example.com
+
+expected:
+  url: https://example.com/dashboard
+  elements:
+    - selector: '.dashboard'
+      visible: true
+    - selector: '.user-profile'
+      visible: true
+      contains: testuser
+  status: success
