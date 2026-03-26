@@ -6,6 +6,10 @@ import asyncio
 import sys
 from pathlib import Path
 
+# Fix Windows encoding for emojis
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 # Add project root to path
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
